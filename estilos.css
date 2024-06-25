@@ -26,9 +26,10 @@ h1 {
 }
 
 h1:hover {
-    font-size: 40px;
-    color: #137c32;
     transition: 0.3s;
+    filter: drop-shadow(
+      0 0 15px rgb(255, 255, 255)
+    )
 }
 
 p {
@@ -57,15 +58,18 @@ p {
 }
 
 .contenedor .pelicula .poster {
-    width: 90%;
+    height: 300px;
+    width: 70%;
     margin-bottom: 10px;
     border-radius: 15px;
     transition: 0.3s;
 }
 
 .contenedor .pelicula .poster:hover {
-    width: 98%;
     transition: 0.3s;
+    filter: drop-shadow(
+      0 0 15px rgb(255, 255, 255)
+    )
 }
 
 .paginacion {
@@ -95,7 +99,12 @@ p {
 }
 
 .paginacion button:hover {
-    background: #137c32;
+    transition: 0.3s;
+    background: #100a1f;
+    filter: drop-shadow(
+      0 0 5px rgb(255, 255, 255)
+    )
+    
 }
 
 /* Estilos para pantallas más grandes (escritorio) */
@@ -120,5 +129,9 @@ p {
     .paginacion button {
         height: 60px;
         width: 250px;
+    }
+
+    .contenedor .pelicula .poster {
+        width: 90%;
     }
 }
